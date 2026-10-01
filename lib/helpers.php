@@ -32,6 +32,24 @@ function site_origin(): string
 }
 
 /**
+ * True when the site is served from a host that is not the production domain
+ * (a Hostinger preview or staging subdomain). Such a host must never be indexed:
+ * a second public copy of the site would compete with the real one. Localhost
+ * is exempt so the local verify gate sees the production behaviour.
+ */
+function is_staging_host(): bool
+{
+    $host = strtolower((string) preg_replace('/:\d+$/', '', (string) ($_SERVER['HTTP_HOST'] ?? '')));
+    $prod = strtolower((string) site('domain'));
+
+    if ($host === '' || $prod === '' || in_array($host, ['localhost', '127.0.0.1', '[::1]'], true)) {
+        return false;
+    }
+
+    return $host !== $prod && $host !== 'www.' . $prod;
+}
+
+/**
  * Absolute URL for a site-root-relative path. Used for canonical, OG and the
  * sitemap; in-page links use the bare path.
  */

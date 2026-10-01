@@ -15,8 +15,7 @@ header('Content-Type: text/plain; charset=utf-8');
 # <?= site('domain') ?: parse_url(site_origin(), PHP_URL_HOST) ?>
 
 User-agent: *
-Allow: /
-
+<?= is_staging_host() ? "Disallow: /\n" : "Allow: /\n" ?>
 # Application internals — never useful to a crawler.
 Disallow: /content/
 Disallow: /lib/

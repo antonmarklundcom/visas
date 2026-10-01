@@ -33,7 +33,7 @@ $htmlLang    = $page['lang'] ?? market_locale();
 <?php foreach ($page['hreflang'] ?? [] as $hrefLocale => $hrefPath): ?>
 <link rel="alternate" hreflang="<?= e($hrefLocale) ?>" href="<?= e(url($hrefPath)) ?>">
 <?php endforeach; ?>
-<?php if (!empty($page['noindex'])): ?>
+<?php if (!empty($page['noindex']) || is_staging_host()): ?>
 <meta name="robots" content="noindex, follow">
 <?php endif; ?>
 
