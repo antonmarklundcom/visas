@@ -1,93 +1,10 @@
 <?php
-/**
- * Router for the PHP built-in server ONLY:
- *
- *     php -S localhost:8080 router.php
- *
- * Apache never sees this file. It exists so that local preview and verify.sh
- * behave exactly like production, by mirroring every routing rule in .htaccess:
- * the site's own redirects and 410s, sitemap.xml, robots.txt, trailing-slash
- * enforcement, the denied directories, and the 404 document.
- *
- * Directory resolution is generic — any <dir>/index.php is served — so nested routes such as
- * /blog/<slug>/ and /herramientas/<slug>/ work here with no change.
- *
- * If you change a rule in .htaccess, change it here too.
- */
-
-declare(strict_types=1);
-
-$root  = __DIR__;
-$uri   = (string) parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
-$query = (string) ($_SERVER['QUERY_STRING'] ?? '');
-$path  = '/' . ltrim(rawurldecode($uri), '/');
-
-/** Send a status and a tiny body, mirroring what Apache would produce. */
-$halt = static function (int $status, string $body = ''): void {
-    http_response_code($status);
-    header('Content-Type: text/html; charset=utf-8');
-    echo $body;
-};
-
-// --- legacy URLs ------------------------------------------------------------
-// A rebuild of an existing site lists its 410s here and in .htaccess; both must
-// agree, or local preview and production disagree about a URL Google already
-// has. Same for redirects: every RewriteRule there gets a branch here.
-$gone = [];
-if ($gone !== [] && in_array(rtrim($path, '/') . '/', $gone, true)) {
-    $halt(410, '<h1>410 Gone</h1>');
-    return true;
-}
-
-// --- generated text endpoints -----------------------------------------------
-if ($path === '/sitemap.xml') {
-    require $root . '/sitemap.php';
-    return true;
-}
-
-if ($path === '/robots.txt') {
-    require $root . '/robots.php';
-    return true;
-}
-
-// --- denied directories and files ------------------------------------------
-if (preg_match('#^/(content|lib|partials|templates|docs|prompts|tests|deploy|logs)(/|$)#', $path)
-    || preg_match('#^/\.#', $path)
-    || preg_match('#^/config(\.example)?\.php$#', $path)
-    || preg_match('#\.(md|sh|json|lock|ya?ml|log)$#', $path)
-) {
-    $halt(404, '<h1>404 Not Found</h1>');
-    return true;
-}
-
-$file = $root . $path;
-
-// --- existing file: let the built-in server serve it ------------------------
-if ($path !== '/' && is_file($file)) {
-    return false;
-}
-
-// --- directory: enforce the trailing slash, then serve its index.php --------
-if (is_dir(rtrim($file, '/')) && $path !== '/') {
-    if (!str_ends_with($path, '/')) {
-        http_response_code(301);
-        header('Location: ' . $path . '/' . ($query !== '' ? '?' . $query : ''));
-        return true;
-    }
-
-    $index = rtrim($file, '/') . '/index.php';
-    if (is_file($index)) {
-        require $index;
-        return true;
-    }
-}
-
-if ($path === '/' && is_file($root . '/index.php')) {
-    require $root . '/index.php';
-    return true;
-}
-
-// --- ErrorDocument 404 /404.php ---------------------------------------------
-http_response_code(404);
-require $root . '/404.php';
-return true;
+// Local router emulates public routing and prevents developer/private source exposure.
+$path=rawurldecode(parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH)??'/');
+if(preg_match('~(?:^|/)(?:\.|lib/|scripts/|tests/|docs/|deploy/|node_modules/)|\.(?:mjs|md|py|log|zip|json)$~i',$path)){http_response_code(404);echo 'Not found';return true;}
+if($path==='/lead-forward.php'){require __DIR__.'/lead-forward.php';return true;}
+if(str_ends_with($path,'index.html')){header('Location: '.substr($path,0,-10),true,301);return true;}
+$root=realpath(__DIR__);$file=realpath(__DIR__.$path);
+if(!$file || !str_starts_with($file,$root.DIRECTORY_SEPARATOR)&&$file!==$root){http_response_code(404);readfile(__DIR__.'/404.html');return true;}
+if(is_dir($file)){if(!str_ends_with($path,'/')){header('Location: '.$path.'/',true,301);return true;}$file.='/index.html';if(!is_file($file)){http_response_code(404);return true;}header('Content-Type: text/html; charset=utf-8');$html=(string)file_get_contents($file);if(($_GET['audit_text']??'')==='200')$html=str_replace('</head>','<style>html{font-size:200%}</style></head>',$html);echo $html;return true;}
+return false;

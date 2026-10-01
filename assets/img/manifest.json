@@ -1,0 +1,747 @@
+{
+  "generated_at": "2026-09-14T14:45:41.083Z",
+  "images": [
+    {
+      "filename_base": "pareja-paraguaya-aeropuerto-asuncion-pasaportes",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260914_140746_b8072ecc-d558-444f-8265-605d4cd5d2e1.png",
+      "prompt": "home hero couple airport",
+      "alt_text": "Ilustración: pareja paraguaya con pasaportes y tarjeta de embarque en el aeropuerto Silvio Pettirossi de Asunción",
+      "naming_source": "fallback",
+      "aspect_ratio": "3:2",
+      "files": [
+        {
+          "file": "pareja-paraguaya-aeropuerto-asuncion-pasaportes-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 427,
+          "kb": 16.3
+        },
+        {
+          "file": "pareja-paraguaya-aeropuerto-asuncion-pasaportes-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 427,
+          "kb": 21.6
+        },
+        {
+          "file": "pareja-paraguaya-aeropuerto-asuncion-pasaportes-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 853,
+          "kb": 33.1
+        },
+        {
+          "file": "pareja-paraguaya-aeropuerto-asuncion-pasaportes-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 853,
+          "kb": 50.6
+        },
+        {
+          "file": "pareja-paraguaya-aeropuerto-asuncion-pasaportes-1920.avif",
+          "format": "avif",
+          "width": 1920,
+          "height": 1280,
+          "kb": 49.4
+        },
+        {
+          "file": "pareja-paraguaya-aeropuerto-asuncion-pasaportes-1920.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1280,
+          "kb": 82.7
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/pareja-paraguaya-aeropuerto-asuncion-pasaportes-640.avif 640w, assets/img/pareja-paraguaya-aeropuerto-asuncion-pasaportes-1280.avif 1280w, assets/img/pareja-paraguaya-aeropuerto-asuncion-pasaportes-1920.avif 1920w\">\n  <source type=\"image/webp\" srcset=\"assets/img/pareja-paraguaya-aeropuerto-asuncion-pasaportes-640.webp 640w, assets/img/pareja-paraguaya-aeropuerto-asuncion-pasaportes-1280.webp 1280w, assets/img/pareja-paraguaya-aeropuerto-asuncion-pasaportes-1920.webp 1920w\">\n  <img src=\"assets/img/pareja-paraguaya-aeropuerto-asuncion-pasaportes-1280.webp\" alt=\"Pareja paraguaya con pasaportes y tarjeta de embarque en el aeropuerto Silvio Pettirossi de Asunción\" width=\"1280\" height=\"853\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "pasaporte-formulario-ds-160-escritorio-terere",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260914_140746_a04a8154-2b95-4169-9f16-ef3fa6a1a1da.png",
+      "prompt": "hub desk passport form terere",
+      "alt_text": "Ilustración: pasaporte formulario impreso y tereré sobre un escritorio antes de preparar la visa americana",
+      "naming_source": "fallback",
+      "aspect_ratio": "4:3",
+      "files": [
+        {
+          "file": "pasaporte-formulario-ds-160-escritorio-terere-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 480,
+          "kb": 19.6
+        },
+        {
+          "file": "pasaporte-formulario-ds-160-escritorio-terere-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 480,
+          "kb": 28.6
+        },
+        {
+          "file": "pasaporte-formulario-ds-160-escritorio-terere-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 960,
+          "kb": 56.9
+        },
+        {
+          "file": "pasaporte-formulario-ds-160-escritorio-terere-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 960,
+          "kb": 92.4
+        },
+        {
+          "file": "pasaporte-formulario-ds-160-escritorio-terere-1920.avif",
+          "format": "avif",
+          "width": 1920,
+          "height": 1440,
+          "kb": 102.3
+        },
+        {
+          "file": "pasaporte-formulario-ds-160-escritorio-terere-1920.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1440,
+          "kb": 172.8
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/pasaporte-formulario-ds-160-escritorio-terere-640.avif 640w, assets/img/pasaporte-formulario-ds-160-escritorio-terere-1280.avif 1280w, assets/img/pasaporte-formulario-ds-160-escritorio-terere-1920.avif 1920w\">\n  <source type=\"image/webp\" srcset=\"assets/img/pasaporte-formulario-ds-160-escritorio-terere-640.webp 640w, assets/img/pasaporte-formulario-ds-160-escritorio-terere-1280.webp 1280w, assets/img/pasaporte-formulario-ds-160-escritorio-terere-1920.webp 1920w\">\n  <img src=\"assets/img/pasaporte-formulario-ds-160-escritorio-terere-1280.webp\" alt=\"Pasaporte formulario impreso y tereré sobre un escritorio antes de preparar la visa americana\" width=\"1280\" height=\"960\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "visa-de-turista-viajera-calle-miami",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260914_140747_0f695f7c-f39d-48d1-bfd8-cbf744d224c1.png",
+      "prompt": "turista Miami",
+      "alt_text": "Ilustración: viajera con valija caminando por una calle soleada de Miami con palmeras y edificios art déco",
+      "naming_source": "fallback",
+      "aspect_ratio": "4:3",
+      "files": [
+        {
+          "file": "visa-de-turista-viajera-calle-miami-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 480,
+          "kb": 22.5
+        },
+        {
+          "file": "visa-de-turista-viajera-calle-miami-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 480,
+          "kb": 30
+        },
+        {
+          "file": "visa-de-turista-viajera-calle-miami-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 960,
+          "kb": 46.1
+        },
+        {
+          "file": "visa-de-turista-viajera-calle-miami-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 960,
+          "kb": 70.4
+        },
+        {
+          "file": "visa-de-turista-viajera-calle-miami-1920.avif",
+          "format": "avif",
+          "width": 1920,
+          "height": 1440,
+          "kb": 70.1
+        },
+        {
+          "file": "visa-de-turista-viajera-calle-miami-1920.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1440,
+          "kb": 118.8
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/visa-de-turista-viajera-calle-miami-640.avif 640w, assets/img/visa-de-turista-viajera-calle-miami-1280.avif 1280w, assets/img/visa-de-turista-viajera-calle-miami-1920.avif 1920w\">\n  <source type=\"image/webp\" srcset=\"assets/img/visa-de-turista-viajera-calle-miami-640.webp 640w, assets/img/visa-de-turista-viajera-calle-miami-1280.webp 1280w, assets/img/visa-de-turista-viajera-calle-miami-1920.webp 1920w\">\n  <img src=\"assets/img/visa-de-turista-viajera-calle-miami-1280.webp\" alt=\"Viajera con valija caminando por una calle soleada de Miami con palmeras y edificios art déco\" width=\"1280\" height=\"960\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "renovacion-visa-pasaporte-sellos-asuncion",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260914_140746_78545a09-6eff-45f0-940c-465316a37a69.png",
+      "prompt": "renovacion passport stamps",
+      "alt_text": "Ilustración: manos sosteniendo un pasaporte abierto con sellos de viajes anteriores en un departamento de Asunción",
+      "naming_source": "fallback",
+      "aspect_ratio": "4:3",
+      "files": [
+        {
+          "file": "renovacion-visa-pasaporte-sellos-asuncion-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 480,
+          "kb": 14.5
+        },
+        {
+          "file": "renovacion-visa-pasaporte-sellos-asuncion-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 480,
+          "kb": 20.6
+        },
+        {
+          "file": "renovacion-visa-pasaporte-sellos-asuncion-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 960,
+          "kb": 31.7
+        },
+        {
+          "file": "renovacion-visa-pasaporte-sellos-asuncion-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 960,
+          "kb": 52.3
+        },
+        {
+          "file": "renovacion-visa-pasaporte-sellos-asuncion-1920.avif",
+          "format": "avif",
+          "width": 1920,
+          "height": 1440,
+          "kb": 50.7
+        },
+        {
+          "file": "renovacion-visa-pasaporte-sellos-asuncion-1920.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1440,
+          "kb": 88.2
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/renovacion-visa-pasaporte-sellos-asuncion-640.avif 640w, assets/img/renovacion-visa-pasaporte-sellos-asuncion-1280.avif 1280w, assets/img/renovacion-visa-pasaporte-sellos-asuncion-1920.avif 1920w\">\n  <source type=\"image/webp\" srcset=\"assets/img/renovacion-visa-pasaporte-sellos-asuncion-640.webp 640w, assets/img/renovacion-visa-pasaporte-sellos-asuncion-1280.webp 1280w, assets/img/renovacion-visa-pasaporte-sellos-asuncion-1920.webp 1920w\">\n  <img src=\"assets/img/renovacion-visa-pasaporte-sellos-asuncion-1280.webp\" alt=\"Manos sosteniendo un pasaporte abierto con sellos de viajes anteriores en un departamento de Asunción\" width=\"1280\" height=\"960\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "visa-de-estudiante-campus-universidad-estados-unidos",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260914_140746_f5fbec6c-a1e3-49f2-b889-54c9175acdd4.png",
+      "prompt": "estudiante campus",
+      "alt_text": "Ilustración: estudiante paraguayo con mochila y libros en un campus universitario de Estados Unidos en otoño",
+      "naming_source": "fallback",
+      "aspect_ratio": "4:3",
+      "files": [
+        {
+          "file": "visa-de-estudiante-campus-universidad-estados-unidos-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 480,
+          "kb": 29.4
+        },
+        {
+          "file": "visa-de-estudiante-campus-universidad-estados-unidos-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 480,
+          "kb": 40.4
+        },
+        {
+          "file": "visa-de-estudiante-campus-universidad-estados-unidos-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 960,
+          "kb": 64.5
+        },
+        {
+          "file": "visa-de-estudiante-campus-universidad-estados-unidos-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 960,
+          "kb": 98.2
+        },
+        {
+          "file": "visa-de-estudiante-campus-universidad-estados-unidos-1920.avif",
+          "format": "avif",
+          "width": 1920,
+          "height": 1440,
+          "kb": 99.8
+        },
+        {
+          "file": "visa-de-estudiante-campus-universidad-estados-unidos-1920.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1440,
+          "kb": 164.8
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/visa-de-estudiante-campus-universidad-estados-unidos-640.avif 640w, assets/img/visa-de-estudiante-campus-universidad-estados-unidos-1280.avif 1280w, assets/img/visa-de-estudiante-campus-universidad-estados-unidos-1920.avif 1920w\">\n  <source type=\"image/webp\" srcset=\"assets/img/visa-de-estudiante-campus-universidad-estados-unidos-640.webp 640w, assets/img/visa-de-estudiante-campus-universidad-estados-unidos-1280.webp 1280w, assets/img/visa-de-estudiante-campus-universidad-estados-unidos-1920.webp 1920w\">\n  <img src=\"assets/img/visa-de-estudiante-campus-universidad-estados-unidos-1280.webp\" alt=\"Estudiante paraguayo con mochila y libros en un campus universitario de Estados Unidos en otoño\" width=\"1280\" height=\"960\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "visa-de-trabajo-obrero-estados-unidos",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260914_140746_f32344cb-a416-4b45-90ab-2bbd87d5827d.png",
+      "prompt": "trabajo construction",
+      "alt_text": "Ilustración: trabajador latinoamericano con chaleco de seguridad en una obra en Estados Unidos al atardecer",
+      "naming_source": "fallback",
+      "aspect_ratio": "4:3",
+      "files": [
+        {
+          "file": "visa-de-trabajo-obrero-estados-unidos-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 480,
+          "kb": 10.3
+        },
+        {
+          "file": "visa-de-trabajo-obrero-estados-unidos-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 480,
+          "kb": 15.2
+        },
+        {
+          "file": "visa-de-trabajo-obrero-estados-unidos-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 960,
+          "kb": 20.7
+        },
+        {
+          "file": "visa-de-trabajo-obrero-estados-unidos-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 960,
+          "kb": 35.3
+        },
+        {
+          "file": "visa-de-trabajo-obrero-estados-unidos-1920.avif",
+          "format": "avif",
+          "width": 1920,
+          "height": 1440,
+          "kb": 30.7
+        },
+        {
+          "file": "visa-de-trabajo-obrero-estados-unidos-1920.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1440,
+          "kb": 59.9
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/visa-de-trabajo-obrero-estados-unidos-640.avif 640w, assets/img/visa-de-trabajo-obrero-estados-unidos-1280.avif 1280w, assets/img/visa-de-trabajo-obrero-estados-unidos-1920.avif 1920w\">\n  <source type=\"image/webp\" srcset=\"assets/img/visa-de-trabajo-obrero-estados-unidos-640.webp 640w, assets/img/visa-de-trabajo-obrero-estados-unidos-1280.webp 1280w, assets/img/visa-de-trabajo-obrero-estados-unidos-1920.webp 1920w\">\n  <img src=\"assets/img/visa-de-trabajo-obrero-estados-unidos-1280.webp\" alt=\"Trabajador latinoamericano con chaleco de seguridad en una obra en Estados Unidos al atardecer\" width=\"1280\" height=\"960\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "simulacro-entrevista-visa-oficina-asuncion",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260914_140746_6a3c3504-d7b4-48a0-b216-eeb91c3b100d.png",
+      "prompt": "simulacro entrevista office",
+      "alt_text": "Ilustración: dos personas conversando en una mesa con documentos",
+      "naming_source": "fallback",
+      "aspect_ratio": "4:3",
+      "files": [
+        {
+          "file": "simulacro-entrevista-visa-oficina-asuncion-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 480,
+          "kb": 14.4
+        },
+        {
+          "file": "simulacro-entrevista-visa-oficina-asuncion-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 480,
+          "kb": 20.3
+        },
+        {
+          "file": "simulacro-entrevista-visa-oficina-asuncion-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 960,
+          "kb": 29.8
+        },
+        {
+          "file": "simulacro-entrevista-visa-oficina-asuncion-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 960,
+          "kb": 48.3
+        },
+        {
+          "file": "simulacro-entrevista-visa-oficina-asuncion-1920.avif",
+          "format": "avif",
+          "width": 1920,
+          "height": 1440,
+          "kb": 45.3
+        },
+        {
+          "file": "simulacro-entrevista-visa-oficina-asuncion-1920.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1440,
+          "kb": 81.9
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/simulacro-entrevista-visa-oficina-asuncion-640.avif 640w, assets/img/simulacro-entrevista-visa-oficina-asuncion-1280.avif 1280w, assets/img/simulacro-entrevista-visa-oficina-asuncion-1920.avif 1920w\">\n  <source type=\"image/webp\" srcset=\"assets/img/simulacro-entrevista-visa-oficina-asuncion-640.webp 640w, assets/img/simulacro-entrevista-visa-oficina-asuncion-1280.webp 1280w, assets/img/simulacro-entrevista-visa-oficina-asuncion-1920.webp 1920w\">\n  <img src=\"assets/img/simulacro-entrevista-visa-oficina-asuncion-1280.webp\" alt=\"Asesor y cliente practicando la entrevista de visa en una oficina luminosa de Asunción\" width=\"1280\" height=\"960\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "visa-denegada-revisar-documentos-en-casa",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260914_140746_32bc6f8f-14ce-4508-844b-58b96c1e9172.png",
+      "prompt": "denegada documents kitchen",
+      "alt_text": "Ilustración: mujer revisando con calma una carpeta de documentos en la mesa de su casa en Asunción",
+      "naming_source": "fallback",
+      "aspect_ratio": "4:3",
+      "files": [
+        {
+          "file": "visa-denegada-revisar-documentos-en-casa-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 480,
+          "kb": 14.1
+        },
+        {
+          "file": "visa-denegada-revisar-documentos-en-casa-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 480,
+          "kb": 20.2
+        },
+        {
+          "file": "visa-denegada-revisar-documentos-en-casa-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 960,
+          "kb": 28.6
+        },
+        {
+          "file": "visa-denegada-revisar-documentos-en-casa-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 960,
+          "kb": 48.1
+        },
+        {
+          "file": "visa-denegada-revisar-documentos-en-casa-1920.avif",
+          "format": "avif",
+          "width": 1920,
+          "height": 1440,
+          "kb": 44
+        },
+        {
+          "file": "visa-denegada-revisar-documentos-en-casa-1920.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1440,
+          "kb": 81.6
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/visa-denegada-revisar-documentos-en-casa-640.avif 640w, assets/img/visa-denegada-revisar-documentos-en-casa-1280.avif 1280w, assets/img/visa-denegada-revisar-documentos-en-casa-1920.avif 1920w\">\n  <source type=\"image/webp\" srcset=\"assets/img/visa-denegada-revisar-documentos-en-casa-640.webp 640w, assets/img/visa-denegada-revisar-documentos-en-casa-1280.webp 1280w, assets/img/visa-denegada-revisar-documentos-en-casa-1920.webp 1920w\">\n  <img src=\"assets/img/visa-denegada-revisar-documentos-en-casa-1280.webp\" alt=\"Mujer revisando con calma una carpeta de documentos en la mesa de su casa en Asunción\" width=\"1280\" height=\"960\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "visa-canada-viajero-toronto-cn-tower",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260914_140746_3066d759-5f57-4ddb-81b9-9a2a628edd6d.png",
+      "prompt": "canada toronto",
+      "alt_text": "Ilustración: viajero con valija frente al skyline de Toronto y la CN Tower al atardecer",
+      "naming_source": "fallback",
+      "aspect_ratio": "4:3",
+      "files": [
+        {
+          "file": "visa-canada-viajero-toronto-cn-tower-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 480,
+          "kb": 13.2
+        },
+        {
+          "file": "visa-canada-viajero-toronto-cn-tower-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 480,
+          "kb": 18.9
+        },
+        {
+          "file": "visa-canada-viajero-toronto-cn-tower-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 960,
+          "kb": 28.7
+        },
+        {
+          "file": "visa-canada-viajero-toronto-cn-tower-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 960,
+          "kb": 46.8
+        },
+        {
+          "file": "visa-canada-viajero-toronto-cn-tower-1920.avif",
+          "format": "avif",
+          "width": 1920,
+          "height": 1440,
+          "kb": 44.7
+        },
+        {
+          "file": "visa-canada-viajero-toronto-cn-tower-1920.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1440,
+          "kb": 78.2
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/visa-canada-viajero-toronto-cn-tower-640.avif 640w, assets/img/visa-canada-viajero-toronto-cn-tower-1280.avif 1280w, assets/img/visa-canada-viajero-toronto-cn-tower-1920.avif 1920w\">\n  <source type=\"image/webp\" srcset=\"assets/img/visa-canada-viajero-toronto-cn-tower-640.webp 640w, assets/img/visa-canada-viajero-toronto-cn-tower-1280.webp 1280w, assets/img/visa-canada-viajero-toronto-cn-tower-1920.webp 1920w\">\n  <img src=\"assets/img/visa-canada-viajero-toronto-cn-tower-1280.webp\" alt=\"Viajero con valija frente al skyline de Toronto y la CN Tower al atardecer\" width=\"1280\" height=\"960\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "residencia-en-paraguay-extranjeros-costanera-asuncion",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260914_140746_25fba4c8-7942-4311-9d22-ca7c8b3663e1.png",
+      "prompt": "residencia costanera",
+      "alt_text": "Ilustración: pareja extranjera paseando por la Costanera de Asunción con el Palacio de López de fondo",
+      "naming_source": "fallback",
+      "aspect_ratio": "4:3",
+      "files": [
+        {
+          "file": "residencia-en-paraguay-extranjeros-costanera-asuncion-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 480,
+          "kb": 26.8
+        },
+        {
+          "file": "residencia-en-paraguay-extranjeros-costanera-asuncion-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 480,
+          "kb": 36
+        },
+        {
+          "file": "residencia-en-paraguay-extranjeros-costanera-asuncion-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 960,
+          "kb": 60
+        },
+        {
+          "file": "residencia-en-paraguay-extranjeros-costanera-asuncion-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 960,
+          "kb": 88.5
+        },
+        {
+          "file": "residencia-en-paraguay-extranjeros-costanera-asuncion-1920.avif",
+          "format": "avif",
+          "width": 1920,
+          "height": 1440,
+          "kb": 92.8
+        },
+        {
+          "file": "residencia-en-paraguay-extranjeros-costanera-asuncion-1920.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1440,
+          "kb": 148.2
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/residencia-en-paraguay-extranjeros-costanera-asuncion-640.avif 640w, assets/img/residencia-en-paraguay-extranjeros-costanera-asuncion-1280.avif 1280w, assets/img/residencia-en-paraguay-extranjeros-costanera-asuncion-1920.avif 1920w\">\n  <source type=\"image/webp\" srcset=\"assets/img/residencia-en-paraguay-extranjeros-costanera-asuncion-640.webp 640w, assets/img/residencia-en-paraguay-extranjeros-costanera-asuncion-1280.webp 1280w, assets/img/residencia-en-paraguay-extranjeros-costanera-asuncion-1920.webp 1920w\">\n  <img src=\"assets/img/residencia-en-paraguay-extranjeros-costanera-asuncion-1280.webp\" alt=\"Pareja extranjera paseando por la Costanera de Asunción con el Palacio de López de fondo\" width=\"1280\" height=\"960\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "visa-europa-estudiante-paraguaya-barcelona",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260914_140746_54a8b9a3-559c-4c43-a2e2-443134ae4b89.png",
+      "prompt": "europa barcelona",
+      "alt_text": "Ilustración: joven paraguaya con mochila en una calle del casco antiguo de Barcelona",
+      "naming_source": "fallback",
+      "aspect_ratio": "4:3",
+      "files": [
+        {
+          "file": "visa-europa-estudiante-paraguaya-barcelona-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 480,
+          "kb": 17
+        },
+        {
+          "file": "visa-europa-estudiante-paraguaya-barcelona-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 480,
+          "kb": 24.8
+        },
+        {
+          "file": "visa-europa-estudiante-paraguaya-barcelona-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 960,
+          "kb": 38.7
+        },
+        {
+          "file": "visa-europa-estudiante-paraguaya-barcelona-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 960,
+          "kb": 62.2
+        },
+        {
+          "file": "visa-europa-estudiante-paraguaya-barcelona-1920.avif",
+          "format": "avif",
+          "width": 1920,
+          "height": 1440,
+          "kb": 61.1
+        },
+        {
+          "file": "visa-europa-estudiante-paraguaya-barcelona-1920.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1440,
+          "kb": 107
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/visa-europa-estudiante-paraguaya-barcelona-640.avif 640w, assets/img/visa-europa-estudiante-paraguaya-barcelona-1280.avif 1280w, assets/img/visa-europa-estudiante-paraguaya-barcelona-1920.avif 1920w\">\n  <source type=\"image/webp\" srcset=\"assets/img/visa-europa-estudiante-paraguaya-barcelona-640.webp 640w, assets/img/visa-europa-estudiante-paraguaya-barcelona-1280.webp 1280w, assets/img/visa-europa-estudiante-paraguaya-barcelona-1920.webp 1920w\">\n  <img src=\"assets/img/visa-europa-estudiante-paraguaya-barcelona-1280.webp\" alt=\"Joven paraguaya con mochila en una calle del casco antiguo de Barcelona\" width=\"1280\" height=\"960\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "oficina-asesoria-de-visas-asuncion",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260914_140746_f73aada3-dba3-4504-8464-eeb84ede6a39.png",
+      "prompt": "nosotros office",
+      "alt_text": "Ilustración: escritorio de madera con un mapa del mundo",
+      "naming_source": "fallback",
+      "aspect_ratio": "3:2",
+      "files": [
+        {
+          "file": "oficina-asesoria-de-visas-asuncion-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 427,
+          "kb": 21.4
+        },
+        {
+          "file": "oficina-asesoria-de-visas-asuncion-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 427,
+          "kb": 28.2
+        },
+        {
+          "file": "oficina-asesoria-de-visas-asuncion-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 853,
+          "kb": 66.6
+        },
+        {
+          "file": "oficina-asesoria-de-visas-asuncion-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 853,
+          "kb": 93.8
+        },
+        {
+          "file": "oficina-asesoria-de-visas-asuncion-1920.avif",
+          "format": "avif",
+          "width": 1920,
+          "height": 1280,
+          "kb": 118.7
+        },
+        {
+          "file": "oficina-asesoria-de-visas-asuncion-1920.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1280,
+          "kb": 186.6
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/oficina-asesoria-de-visas-asuncion-640.avif 640w, assets/img/oficina-asesoria-de-visas-asuncion-1280.avif 1280w, assets/img/oficina-asesoria-de-visas-asuncion-1920.avif 1920w\">\n  <source type=\"image/webp\" srcset=\"assets/img/oficina-asesoria-de-visas-asuncion-640.webp 640w, assets/img/oficina-asesoria-de-visas-asuncion-1280.webp 1280w, assets/img/oficina-asesoria-de-visas-asuncion-1920.webp 1920w\">\n  <img src=\"assets/img/oficina-asesoria-de-visas-asuncion-1280.webp\" alt=\"Oficina de asesoría de visas en Asunción con escritorio de madera mapa del mundo y plantas\" width=\"1280\" height=\"853\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "paraguay-entry-visa-arrivals-hall-asuncion",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260914_144042_ffb7882b-8768-4657-9dc7-985b2fe118a4.png",
+      "prompt": "paraguay entry visa arrivals",
+      "alt_text": "Ilustración: traveller holding a passport in the arrivals hall of Silvio Pettirossi airport in Asunción",
+      "naming_source": "fallback",
+      "aspect_ratio": "4:3",
+      "files": [
+        {
+          "file": "paraguay-entry-visa-arrivals-hall-asuncion-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 480,
+          "kb": 17.5
+        },
+        {
+          "file": "paraguay-entry-visa-arrivals-hall-asuncion-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 480,
+          "kb": 23.9
+        },
+        {
+          "file": "paraguay-entry-visa-arrivals-hall-asuncion-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 960,
+          "kb": 35.5
+        },
+        {
+          "file": "paraguay-entry-visa-arrivals-hall-asuncion-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 960,
+          "kb": 55.5
+        },
+        {
+          "file": "paraguay-entry-visa-arrivals-hall-asuncion-1920.avif",
+          "format": "avif",
+          "width": 1920,
+          "height": 1440,
+          "kb": 53.6
+        },
+        {
+          "file": "paraguay-entry-visa-arrivals-hall-asuncion-1920.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1440,
+          "kb": 92
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/paraguay-entry-visa-arrivals-hall-asuncion-640.avif 640w, assets/img/paraguay-entry-visa-arrivals-hall-asuncion-1280.avif 1280w, assets/img/paraguay-entry-visa-arrivals-hall-asuncion-1920.avif 1920w\">\n  <source type=\"image/webp\" srcset=\"assets/img/paraguay-entry-visa-arrivals-hall-asuncion-640.webp 640w, assets/img/paraguay-entry-visa-arrivals-hall-asuncion-1280.webp 1280w, assets/img/paraguay-entry-visa-arrivals-hall-asuncion-1920.webp 1920w\">\n  <img src=\"assets/img/paraguay-entry-visa-arrivals-hall-asuncion-1280.webp\" alt=\"Traveller holding a passport in the arrivals hall of Silvio Pettirossi airport in Asunción\" width=\"1280\" height=\"960\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "expat-us-visa-application-office-asuncion",
+      "source": "https://d8j0ntlcm91z4.cloudfront.net/user_349VrHjTFIpx9q71lpfpAXcLXvR/hf_20260914_144041_6d64c7fd-7833-4c9b-ac01-6630f4bf9e02.png",
+      "prompt": "expat us visa office",
+      "alt_text": "Illustration: passport and documents on a desk",
+      "naming_source": "fallback",
+      "aspect_ratio": "4:3",
+      "files": [
+        {
+          "file": "expat-us-visa-application-office-asuncion-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 480,
+          "kb": 16.7
+        },
+        {
+          "file": "expat-us-visa-application-office-asuncion-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 480,
+          "kb": 23.2
+        },
+        {
+          "file": "expat-us-visa-application-office-asuncion-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 960,
+          "kb": 34.7
+        },
+        {
+          "file": "expat-us-visa-application-office-asuncion-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 960,
+          "kb": 55.2
+        },
+        {
+          "file": "expat-us-visa-application-office-asuncion-1920.avif",
+          "format": "avif",
+          "width": 1920,
+          "height": 1440,
+          "kb": 53.5
+        },
+        {
+          "file": "expat-us-visa-application-office-asuncion-1920.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1440,
+          "kb": 93.5
+        }
+      ],
+      "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/expat-us-visa-application-office-asuncion-640.avif 640w, assets/img/expat-us-visa-application-office-asuncion-1280.avif 1280w, assets/img/expat-us-visa-application-office-asuncion-1920.avif 1920w\">\n  <source type=\"image/webp\" srcset=\"assets/img/expat-us-visa-application-office-asuncion-640.webp 640w, assets/img/expat-us-visa-application-office-asuncion-1280.webp 1280w, assets/img/expat-us-visa-application-office-asuncion-1920.webp 1920w\">\n  <img src=\"assets/img/expat-us-visa-application-office-asuncion-1280.webp\" alt=\"Expat reviewing passport and documents with an advisor in a bright office in Asunción\" width=\"1280\" height=\"960\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    }
+  ]
+}
