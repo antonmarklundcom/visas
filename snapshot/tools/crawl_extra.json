@@ -1,0 +1,303 @@
+{
+ "blocked_third_party_requests": {},
+ "external_link_hosts": {
+  "wa.me": [
+   "https://wa.me/595995628862?text=Hi!%20I%20found%20visas.com.py%20and%20have%20a%20question%20about%20Canada%20visa%20from%20Paraguay%3A",
+   "https://wa.me/595995628862?text=Hi!%20I%20found%20visas.com.py%20and%20have%20a%20question%20about%20Paraguay%20entry%20visa%3A",
+   "https://wa.me/595995628862?text=Hi!%20I%20found%20visas.com.py%20and%20have%20a%20question%20about%20US%20visa%20from%20Paraguay%3A",
+   "https://wa.me/595995628862?text=Hi!%20I%20have%20a%20question%20about%20visas%3A",
+   "https://wa.me/595995628862?text=Hola!%20Mi%20consulta%3A%20Me%20negaron%20la%20visa.%20%C2%BFQu%C3%A9%20necesito%20para%20empezar%3F",
+   "https://wa.me/595995628862?text=Hola!%20Mi%20consulta%3A%20Otra%20consulta.%20%C2%BFQu%C3%A9%20necesito%20para%20empezar%3F",
+   "https://wa.me/595995628862?text=Hola!%20Mi%20consulta%3A%20Otro%20destino%20(Canad%C3%A1%2C%20Espa%C3%B1a%2C%20Australia).%20%C2%BFQu%C3%A9%20necesito%20para%20empezar%3F",
+   "https://wa.me/595995628862?text=Hola!%20Mi%20consulta%3A%20Renovar%20mi%20visa%20americana.%20%C2%BFQu%C3%A9%20necesito%20para%20empezar%3F",
+   "https://wa.me/595995628862?text=Hola!%20Mi%20consulta%3A%20Residencia%20o%20visa%20para%20entrar%20a%20Paraguay.%20%C2%BFQu%C3%A9%20necesito%20para%20empezar%3F",
+   "https://wa.me/595995628862?text=Hola!%20Mi%20consulta%3A%20Visa%20de%20estudiante%20o%20Work%20and%20Travel.%20%C2%BFQu%C3%A9%20necesito%20para%20empezar%3F",
+   "https://wa.me/595995628862?text=Hola!%20Mi%20consulta%3A%20Visa%20de%20turista%20EE.UU.%20primera%20vez.%20%C2%BFQu%C3%A9%20necesito%20para%20empezar%3F",
+   "https://wa.me/595995628862?text=Hola!%20Tengo%20una%20consulta%20sobre%20visas%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20C%C3%B3mo%20llenar%20el%20DS-160.%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20Checklist%20de%20visa%20americana.%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20Cu%C3%A1nto%20cuesta%20la%20visa%20americana.%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20Embajada%20de%20Estados%20Unidos%20en%20Paraguay.%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20Migraciones%20Paraguay.%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20Preguntas%20de%20entrevista.%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20Preparaci%C3%B3n%20de%20entrevista.%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20Renovaci%C3%B3n%20de%20visa.%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20Requisitos%20de%20residencia.%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20Requisitos%20de%20visa%20americana.%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20Requisitos%20para%20viajar%20a%20Espa%C3%B1a.%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20Residencia%20en%20Paraguay.%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20Residencia%20permanente.%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20Residencia%20temporal.%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20Visa%20Australia.%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20Visa%20Espa%C3%B1a.%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20Visa%20de%20estudiante.%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20Visa%20de%20trabajo.%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20Visa%20de%20turista.%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20Visa%20denegada%20bajo%20214(b).%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20Visa%20denegada.%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20Visa%20para%20Canad%C3%A1.%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola!%20Vengo%20de%20visas.com.py%20por%20Work%20and%20Travel.%20Mi%20consulta%3A",
+   "https://wa.me/595995628862?text=Hola%21%20Tengo%20una%20consulta%20sobre%20visas."
+  ],
+  "www.canada.ca": [
+   "https://www.canada.ca/en/services/immigration-citizenship.html"
+  ],
+  "paraguayresidencyguide.com": [
+   "https://paraguayresidencyguide.com/"
+  ],
+  "migraciones.gov.py": [
+   "https://migraciones.gov.py/"
+  ],
+  "travel.state.gov": [
+   "https://travel.state.gov/content/travel/en/News/visas-news/interview-waiver-update-sept-18-2025.html",
+   "https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visitor.html",
+   "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/fees/fees-visa-services.html",
+   "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/forms/ds-160-online-nonimmigrant-visa-application/ds-160-faqs.html",
+   "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/visa-denials.html"
+  ],
+  "py.usembassy.gov": [
+   "https://py.usembassy.gov/visas/"
+  ],
+  "ceac.state.gov": [
+   "https://ceac.state.gov/GenNIV/"
+  ],
+  "www.exteriores.gob.es": [
+   "https://www.exteriores.gob.es/Embajadas/asuncion/es/ServiciosConsulares/Paginas/index.aspx"
+  ],
+  "travel-europe.europa.eu": [
+   "https://travel-europe.europa.eu/en/etias"
+  ],
+  "j1visa.state.gov": [
+   "https://j1visa.state.gov/programs/summer-work-travel/"
+  ],
+  "immi.homeaffairs.gov.au": [
+   "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-finder",
+   "https://immi.homeaffairs.gov.au/what-we-do/whm-program/status-of-country-caps"
+  ]
+ },
+ "nonhtml_internal_links": [],
+ "stats": [
+  {
+   "url": "https://visas.com.py/",
+   "requests": 9,
+   "transfer_kb": 303.7,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/contacto/",
+   "requests": 5,
+   "transfer_kb": 196.3,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/privacidad/",
+   "requests": 5,
+   "transfer_kb": 196.8,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/visa-canada/",
+   "requests": 6,
+   "transfer_kb": 211.9,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/residencia-en-paraguay/",
+   "requests": 7,
+   "transfer_kb": 248.1,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/visa-americana/turista/",
+   "requests": 6,
+   "transfer_kb": 221.3,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/visa-americana/renovacion/",
+   "requests": 6,
+   "transfer_kb": 213.3,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/visa-americana/estudiante/",
+   "requests": 6,
+   "transfer_kb": 228.2,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/visa-americana/trabajo/",
+   "requests": 6,
+   "transfer_kb": 209.1,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/visa-americana/entrevista/",
+   "requests": 6,
+   "transfer_kb": 213.2,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/visa-americana/denegada/",
+   "requests": 6,
+   "transfer_kb": 212.9,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/visa-americana/",
+   "requests": 12,
+   "transfer_kb": 329.2,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/guias/requisitos-visa-americana-paraguay/",
+   "requests": 6,
+   "transfer_kb": 221.5,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/guias/como-llenar-el-ds-160/",
+   "requests": 6,
+   "transfer_kb": 218.5,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/guias/preguntas-entrevista-visa-americana/",
+   "requests": 6,
+   "transfer_kb": 213.3,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/guias/visa-americana-denegada-214b/",
+   "requests": 6,
+   "transfer_kb": 213.0,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/guias/",
+   "requests": 11,
+   "transfer_kb": 312.0,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/preguntas-frecuentes/",
+   "requests": 5,
+   "transfer_kb": 197.3,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/nosotros/",
+   "requests": 5,
+   "transfer_kb": 196.8,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/visa-espana/",
+   "requests": 6,
+   "transfer_kb": 215.7,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/work-and-travel/",
+   "requests": 6,
+   "transfer_kb": 228.1,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/visa-australia/",
+   "requests": 5,
+   "transfer_kb": 197.5,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/residencia-en-paraguay/permanente/",
+   "requests": 6,
+   "transfer_kb": 225.4,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/residencia-en-paraguay/temporal/",
+   "requests": 6,
+   "transfer_kb": 225.4,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/residencia-en-paraguay/requisitos/",
+   "requests": 6,
+   "transfer_kb": 225.4,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/guias/embajada-de-estados-unidos-en-paraguay/",
+   "requests": 5,
+   "transfer_kb": 197.7,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/guias/migraciones-paraguay/",
+   "requests": 6,
+   "transfer_kb": 220.0,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/en/paraguay-visa/",
+   "requests": 6,
+   "transfer_kb": 215.4,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/en/us-visa-from-paraguay/",
+   "requests": 6,
+   "transfer_kb": 214.6,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/en/canada-visa-from-paraguay/",
+   "requests": 6,
+   "transfer_kb": 211.1,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/en/residency-in-paraguay/",
+   "requests": 6,
+   "transfer_kb": 224.0,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/en/",
+   "requests": 6,
+   "transfer_kb": 214.1,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/en/contact/",
+   "requests": 5,
+   "transfer_kb": 195.6,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/guias/cuanto-cuesta-la-visa-americana/",
+   "requests": 6,
+   "transfer_kb": 218.7,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/guias/requisitos-para-viajar-a-espana-desde-paraguay/",
+   "requests": 6,
+   "transfer_kb": 215.9,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/guias/checklist-visa-americana/",
+   "requests": 6,
+   "transfer_kb": 213.4,
+   "rendered_dom_forms": 0
+  },
+  {
+   "url": "https://visas.com.py/en/privacy/",
+   "requests": 5,
+   "transfer_kb": 196.1,
+   "rendered_dom_forms": 0
+  }
+ ]
+}
