@@ -161,7 +161,7 @@ export default [
       ]],
       ['sin-inventar', 'Nunca inventes ni pidas prestado', [
         'No presentes un empleo que no tenés, un contrato armado, un título que no existe ni un movimiento de cuenta que no es tuyo. Tampoco pidas prestado un saldo bancario ni uses documentos de otra persona para parecer mejor. Esas prácticas pueden considerarse fraude y tener consecuencias graves y duraderas para tus solicitudes futuras. Tampoco hace falta aparentar una situación que no tenés: lo que se espera es que cuentes tu vida real, sin sumar ni restar.',
-        'Si tus vínculos son modestos, explicalos tal como son. Una persona honesta con una situación sencilla está en mejor posición que alguien con una historia armada que no resiste una pregunta. Si querés entender cómo se trabaja la preparación sin atajos, leé la guía sobre la denegación 214(b) y las preguntas más habituales de la entrevista. La decisión siempre la toma la autoridad consular.',
+        'Si tus vínculos son modestos, explicalos tal como son. Una persona honesta con una situación sencilla está en mejor posición que alguien con una historia armada que no resiste una pregunta. Si querés entender cómo se trabaja la preparación sin atajos, leé la guía sobre la denegación 214(b) y las preguntas más habituales de la entrevista. La decisión siempre la toma la autoridad consular, y ninguna preparación puede asegurar un resultado determinado.',
       ]],
     ],
   },
