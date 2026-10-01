@@ -1,0 +1,12 @@
+{
+  "name": "site-deploy-tools",
+  "private": true,
+  "description": "Local image conversion for the imagery pipeline. Not shipped: excluded from deploy/make-zip.sh.",
+  "type": "module",
+  "scripts": {
+    "optimize-images": "node optimize-images.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5"
+  }
+}

@@ -1,0 +1,82 @@
+# Apache configuration for Hostinger shared hosting.
+#
+# router.php mirrors every routing rule in this file so that `php -S` behaves
+# like production and verify.sh can assert the same status codes locally. Change
+# one, change the other.
+
+Options -Indexes
+DirectoryIndex index.php index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # --- legacy URLs --------------------------------------------------------
+  # A rebuild of an existing site adds its 410s and redirects here — and the
+  # matching branches in router.php, and the expected statuses in
+  # deploy/routes.php. Kept as a worked pattern:
+  #
+  #   RewriteRule ^hello-world/?$ - [G,L]
+  #   RewriteCond %{QUERY_STRING} ^page_id=3$
+  #   RewriteRule ^$ /privacidad/? [R=301,L]
+  #   RewriteRule ^wp-sitemap\.xml$ /sitemap.xml [R=301,L]
+
+  # --- generated text endpoints -------------------------------------------
+  RewriteRule ^sitemap\.xml$ /sitemap.php [L]
+  RewriteRule ^robots\.txt$  /robots.php  [L]
+
+  # --- trailing slash -----------------------------------------------------
+  # Every page URL is a directory, so /contacto → /contacto/ (301, once).
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_URI} !/$
+  RewriteRule ^(.*)$ /$1/ [R=301,L]
+</IfModule>
+
+ErrorDocument 404 /404.php
+
+# --- keep the application's internals off the web ------------------------
+RedirectMatch 404 ^/(content|lib|partials|templates|docs|prompts|tests|deploy)(/|$)
+RedirectMatch 404 ^/logs(/|$)
+RedirectMatch 404 ^/\.git(/|$)
+
+<FilesMatch "^(config|config\.example)\.php$">
+  Require all denied
+</FilesMatch>
+
+<FilesMatch "\.(md|sh|json|lock|ya?ml|log|dc\.html)$">
+  Require all denied
+</FilesMatch>
+
+# --- compression ---------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml \
+    application/javascript application/json application/xml image/svg+xml
+</IfModule>
+
+# --- caching -------------------------------------------------------------
+# Assets carry a ?v=<mtime> stamp from asset(), so they are safe to cache hard.
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault                          "access plus 1 hour"
+  ExpiresByType text/html                 "access plus 0 seconds"
+  ExpiresByType text/css                  "access plus 1 year"
+  ExpiresByType application/javascript    "access plus 1 year"
+  ExpiresByType font/woff2                "access plus 1 year"
+  ExpiresByType image/svg+xml             "access plus 1 month"
+  ExpiresByType image/webp                "access plus 1 month"
+  ExpiresByType image/avif                "access plus 1 month"
+  ExpiresByType image/png                 "access plus 1 month"
+  ExpiresByType image/jpeg                "access plus 1 month"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|woff2|svg|png|jpe?g|webp|avif)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType font/woff2 .woff2
+</IfModule>

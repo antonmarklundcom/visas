@@ -1,0 +1,80 @@
+name: verify
+
+# Budget: PR-only (a push to main was a second, billed run of the same commit),
+# superseded runs cancelled, and every job capped well under the 360-minute default.
+on:
+  pull_request:
+    paths-ignore: ['**.md', 'docs/**', 'prompts/**']
+
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          # Hostinger shared hosting runs PHP 8.2; CI matches production.
+          php-version: "8.2"
+          extensions: curl, mbstring
+          coverage: none
+
+      - name: verify.sh
+        run: ./verify.sh
+
+      - name: Deploy zip builds and passes the same checks
+        run: |
+          ./deploy/make-zip.sh
+          stage=$(find dist -mindepth 1 -maxdepth 1 -type d | head -1)
+          ./verify.sh --root "$stage" --port 8740
+
+  screenshots:
+    runs-on: ubuntu-latest
+    # Preview images for the PR body. Never blocks the merge on its own.
+    if: github.event_name == 'pull_request'
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+          extensions: curl, mbstring
+          coverage: none
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Playwright
+        working-directory: tests
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Capture the pages this PR changed (plus /), 1440 and 390 px
+        # Plan §4.12: screenshots are PR artifacts, never committed. Pages are derived
+        # from the diff: every route directory whose index.php changed, capped at 10.
+        run: |
+          php -S 127.0.0.1:8080 router.php &
+          for _ in $(seq 1 40); do curl -sf -o /dev/null http://127.0.0.1:8080/ && break; sleep 0.25; done
+          pages=$(git diff --name-only "origin/${{ github.base_ref }}...HEAD" \
+            | grep -E '(^|/)index\.php$' \
+            | sed -E 's#(^|/)index\.php$#/#; s#^/$#/#; s#^([^/])#/\1#' \
+            | grep -v '^/$' | sort -u | head -10)
+          echo "Capturing: / $pages"
+          cd tests
+          node screenshots.mjs --phase ci --base http://127.0.0.1:8080 / $pages
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: docs/screenshots/ci/
