@@ -2,6 +2,7 @@ import { applyEditorial } from './editorial.mjs';
 import feesBooking from './guides-extra/fees-booking.mjs';
 import travelNoVisa from './guides-extra/travel-no-visa.mjs';
 import canadaEstaScams from './guides-extra/canada-esta-scams.mjs';
+import segments from './guides-extra/segments.mjs';
 export const ANALYTICS_ID = '';
 export const CONTACT_FORM_ENABLED = process.env.VISAS_CONTACT_FORM === '1';
 export const WA_MENU = [
@@ -1254,7 +1255,7 @@ FOOTER[1].links = [{ label: 'Todas las guías', href: '/guias/' }, ...GUIDES.map
 
 // Guides ported from the rebuild (information-only, voseo). They appear in the /guias/ hub and the
 // sitemap; the header menu and footer keep the original shorter list.
-const extraGuides = [...feesBooking, ...travelNoVisa, ...canadaEstaScams].map(d => ({ ...guide(d), updated: '2026-10-01' }));
+const extraGuides = [...feesBooking, ...travelNoVisa, ...canadaEstaScams, ...segments].map(d => ({ ...guide(d), updated: '2026-10-01' }));
 GUIDES.push(...extraGuides);
 PAGES.push(...extraGuides);
 PAGES.find(p => p.path === '/guias/').sections[0].items = GUIDES.map(g => ({ eyebrow: 'Guía de preparación', title: g.label, body: g.description, href: g.path, tag: 'Leé la guía' }));
