@@ -1,0 +1,20 @@
+config.php
+logs/*
+!logs/.gitkeep
+dist/
+tests/node_modules/
+tests/output/
+.DS_Store
+
+# Imagery pipeline: raw generated images land here before
+# deploy/optimize-images.mjs converts them into assets/img/. Never commit the
+# source PNGs, only the converted AVIF/WebP output.
+deploy/imagery-src/*
+!deploy/imagery-src/.gitkeep
+deploy/node_modules/
+.claude/worktrees/
+
+# Screenshots are CI artifacts, never committed: committing them made the
+# previous build's tree 97% PNGs by size, and every later session paid to read them.
+docs/screenshots/*
+!docs/screenshots/.gitkeep
