@@ -1,0 +1,23 @@
+{
+  "name": "visas-com-py",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build-site.mjs",
+    "verify": "node verify.mjs",
+    "serve": "node serve.mjs",
+    "preflight": "node scripts/preflight.mjs",
+    "test": "node scripts/test-leads.mjs",
+    "package": "npm run build && npm run preflight && npm test && node scripts/package.mjs",
+    "queue:report": "php scripts/queue.php --dry-run",
+    "queue:retry:dry": "php scripts/queue.php --send --prune --dry-run",
+    "queue:retry": "php scripts/queue.php --send --prune"
+  },
+  "devDependencies": {
+    "sharp": "0.35.4"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
