@@ -137,7 +137,7 @@ export default [
     path: '/guias/demostrar-vinculos-con-paraguay-visa-americana/',
     label: 'Vínculos con Paraguay',
     title: 'Vínculos con Paraguay para la visa americana',
-    description: 'Qué significan los vínculos con tu país en la visa B1/B2: trabajo, estudios, familia, bienes e historial. Explicalos con verdad, sin documentos inventados.',
+    description: 'Qué son los vínculos con tu país en la visa B1/B2: trabajo, estudios, familia, bienes e historial. Explicalos con verdad, sin documentos inventados.',
     h1: 'Cómo explicar tus vínculos con Paraguay en la visa americana',
     lead: 'En una visa de visitante se habla mucho de los vínculos con el país de origen, pero rara vez se explica qué son. Esta guía te cuenta qué suele entenderse por vínculos, cómo contarlos con la verdad y por qué no existe una lista fija de documentos que tengas que presentar.',
     inline: { label: 'Contanos tu situación', href: '/contacto/', body: 'Si querés ordenar cómo explicar tu trabajo, tus estudios o tu familia, escribinos y te orientamos con información general, sin prometer ningún resultado.' },

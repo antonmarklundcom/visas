@@ -3,6 +3,11 @@ import feesBooking from './guides-extra/fees-booking.mjs';
 import travelNoVisa from './guides-extra/travel-no-visa.mjs';
 import canadaEstaScams from './guides-extra/canada-esta-scams.mjs';
 import segments from './guides-extra/segments.mjs';
+import longtailA from './guides-extra/longtail-a.mjs';
+import longtailB from './guides-extra/longtail-b.mjs';
+import longtailC from './guides-extra/longtail-c.mjs';
+import glossaryHub from './guides-extra/glossary-hub.mjs';
+import faqExtra from './guides-extra/faq-extra.mjs';
 export const ANALYTICS_ID = '';
 export const CONTACT_FORM_ENABLED = process.env.VISAS_CONTACT_FORM === '1';
 export const WA_MENU = [
@@ -1255,7 +1260,21 @@ FOOTER[1].links = [{ label: 'Todas las guías', href: '/guias/' }, ...GUIDES.map
 
 // Guides ported from the rebuild (information-only, voseo). They appear in the /guias/ hub and the
 // sitemap; the header menu and footer keep the original shorter list.
-const extraGuides = [...feesBooking, ...travelNoVisa, ...canadaEstaScams, ...segments].map(d => ({ ...guide(d), updated: '2026-10-01' }));
+// Related links for the first batch of ported guides (the later batches carry their own `related`).
+const RELATED_FIRST_BATCH = {
+  '/guias/pagar-tasa-y-agendar-visa-eeuu/': ['/guias/como-llenar-el-ds-160/', '/guias/cuanto-tarda-la-visa-americana-paraguay/', '/guias/estafas-visa-americana-paraguay/'],
+  '/guias/visa-integrity-fee-usa-paraguay/': ['/guias/cuanto-cuesta-la-visa-americana/', '/guias/pagar-tasa-y-agendar-visa-eeuu/', '/guias/estafas-visa-americana-paraguay/'],
+  '/guias/etias-europa-paraguayos/': ['/guias/requisitos-para-viajar-a-espana-desde-paraguay/', '/guias/destinos-sin-visa-para-paraguayos/', '/guias/estafas-visa-americana-paraguay/'],
+  '/guias/viajar-brasil-argentina-desde-paraguay/': ['/guias/destinos-sin-visa-para-paraguayos/', '/guias/seguro-de-viaje-desde-paraguay/', '/guias/migraciones-paraguay/'],
+  '/guias/visa-canada-paraguayos/': ['/visa-canada/', '/guias/seguro-de-viaje-desde-paraguay/', '/guias/estafas-visa-americana-paraguay/'],
+  '/guias/esta-paraguayos-no-aplica/': ['/visa-americana/turista/', '/guias/estafas-visa-americana-paraguay/', '/guias/requisitos-visa-americana-paraguay/'],
+  '/guias/estafas-visa-americana-paraguay/': ['/guias/pagar-tasa-y-agendar-visa-eeuu/', '/guias/esta-paraguayos-no-aplica/', '/guias/embajada-de-estados-unidos-en-paraguay/'],
+  '/guias/visa-americana-familias/': ['/guias/como-llenar-el-ds-160/', '/guias/foto-para-visa-americana-requisitos/', '/guias/preguntas-entrevista-visa-americana/'],
+  '/guias/visa-americana-comerciantes-empresarios/': ['/guias/demostrar-vinculos-con-paraguay-visa-americana/', '/guias/preguntas-entrevista-visa-americana/', '/guias/que-se-puede-hacer-con-visa-b2/'],
+  '/guias/visa-americana-tratamiento-medico/': ['/guias/que-se-puede-hacer-con-visa-b2/', '/guias/demostrar-vinculos-con-paraguay-visa-americana/', '/guias/preguntas-entrevista-visa-americana/'],
+};
+const extraGuides = [...feesBooking, ...travelNoVisa, ...canadaEstaScams, ...segments, ...longtailA, ...longtailB, ...longtailC, ...glossaryHub]
+  .map(d => ({ ...guide(d), updated: '2026-10-01', relatedOverride: d.related || RELATED_FIRST_BATCH[d.path] }));
 GUIDES.push(...extraGuides);
 PAGES.push(...extraGuides);
 PAGES.find(p => p.path === '/guias/').sections[0].items = GUIDES.map(g => ({ eyebrow: 'Guía de preparación', title: g.label, body: g.description, href: g.path, tag: 'Leé la guía' }));
@@ -1290,6 +1309,7 @@ for (const page of PAGES) {
     page.related = relatedPaths(page);
   }
 }
+for (const g of extraGuides) if (g.relatedOverride) g.related = g.relatedOverride;
 PAGES.find(p => p.path === '/404.html').sections = [{ type: 'prose', id: 'recovery-links', items: [{
   title: 'Retomá tu consulta desde acá',
   body: 'Revisá que el enlace esté completo o elegí el tema que más se acerque a tu consulta.',
@@ -1329,3 +1349,17 @@ PAGES.push({
 });
 
 applyEditorial({ PAGES, NAV, FOOTER, SERVICES, DISCLAIMER, DISCLAIMER_EN, LANGUAGE_PAIRS });
+
+// Extra FAQ entries for existing pages (additive; schema is built from the visible FAQ sections).
+for (const [path, pairs] of Object.entries(faqExtra)) {
+  const page = PAGES.find(p => p.path === path);
+  if (!page) throw new Error('faq-extra: unknown page ' + path);
+  let faq = page.sections.find(s => s.type === 'faq');
+  if (!faq) {
+    faq = { type: 'faq', title: 'Preguntas frecuentes', items: [] };
+    const cta = page.sections.findIndex(s => s.type === 'cta');
+    page.sections.splice(cta === -1 ? page.sections.length : cta, 0, faq);
+  }
+  const seen = new Set(faq.items.map(i => i.question));
+  for (const [question, answer] of pairs) if (!seen.has(question)) faq.items.push({ question, answer });
+}
