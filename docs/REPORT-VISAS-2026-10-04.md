@@ -60,7 +60,7 @@ Inventeringen finns i [live-audit-2026-10-04.json](live-audit-2026-10-04.json). 
 
 ### SEO och driftkod
 
-- Inga nya URL:er skapades i denna PR. Alla publicerade adresser, title, H1 och canonical behålls: **0 skillnader mot de 37 livesidorna** för dessa fält. Beskrivningar och språkpar är fortsatt kontrollerade i bygget.
+- Inga nya URL:er skapades i denna PR. Alla publicerade adresser, title, H1, metabeskrivningar, canonical och hreflang behålls: **0 skillnader mot de 37 livesidorna** för dessa fält. Resultatet finns i [seo-preservation-2026-10-04.json](seo-preservation-2026-10-04.json).
 - Sitemap/robots behåller kodbasens befintliga 64 indexerbara sidor och fyra nyttosidor utanför sitemap.
 - JSON-LD byggs fortsatt från synliga frågor och svar. Organization/WebSite/WebPage används; inga påhittade Service-, pris- eller recensionsuppgifter införs. [Schema.org FAQPage](https://schema.org/FAQPage) kontrollerades; inga löften om sökresultat görs.
 - PHP:s lagringsfel ger ett tydligt generiskt felsvar utan råa varningar. Misslyckade lås stänger filhandtag, och skrivning av frekvensbegränsningen kontrolleras.
