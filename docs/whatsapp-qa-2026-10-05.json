@@ -1,0 +1,350 @@
+{
+  "recipient": "+595 992 279599",
+  "number": "595992279599",
+  "pagesChecked": 68,
+  "staticLinksChecked": 398,
+  "source": "Owner-provided number, 2026-10-05",
+  "privacy": "Canonical page URLs only; query strings and fragments excluded",
+  "pages": [
+    {
+      "path": "/",
+      "links": 13,
+      "status": "PASS"
+    },
+    {
+      "path": "/contacto/",
+      "links": 5,
+      "status": "PASS"
+    },
+    {
+      "path": "/privacidad/",
+      "links": 4,
+      "status": "PASS"
+    },
+    {
+      "path": "/gracias.html",
+      "links": 5,
+      "status": "PASS"
+    },
+    {
+      "path": "/404.html",
+      "links": 5,
+      "status": "PASS"
+    },
+    {
+      "path": "/visa-canada/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/residencia-en-paraguay/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/visa-americana/turista/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/visa-americana/renovacion/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/visa-americana/estudiante/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/visa-americana/trabajo/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/visa-americana/entrevista/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/visa-americana/denegada/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/visa-americana/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/requisitos-visa-americana-paraguay/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/como-llenar-el-ds-160/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/preguntas-entrevista-visa-americana/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/visa-americana-denegada-214b/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/",
+      "links": 5,
+      "status": "PASS"
+    },
+    {
+      "path": "/preguntas-frecuentes/",
+      "links": 5,
+      "status": "PASS"
+    },
+    {
+      "path": "/nosotros/",
+      "links": 5,
+      "status": "PASS"
+    },
+    {
+      "path": "/visa-espana/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/work-and-travel/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/visa-australia/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/residencia-en-paraguay/permanente/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/residencia-en-paraguay/temporal/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/residencia-en-paraguay/requisitos/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/embajada-de-estados-unidos-en-paraguay/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/migraciones-paraguay/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/en/paraguay-visa/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/en/us-visa-from-paraguay/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/en/canada-visa-from-paraguay/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/en/residency-in-paraguay/",
+      "links": 5,
+      "status": "PASS"
+    },
+    {
+      "path": "/en/",
+      "links": 5,
+      "status": "PASS"
+    },
+    {
+      "path": "/en/contact/",
+      "links": 5,
+      "status": "PASS"
+    },
+    {
+      "path": "/en/thank-you.html",
+      "links": 5,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/cuanto-cuesta-la-visa-americana/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/requisitos-para-viajar-a-espana-desde-paraguay/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/checklist-visa-americana/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/pagar-tasa-y-agendar-visa-eeuu/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/visa-integrity-fee-usa-paraguay/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/etias-europa-paraguayos/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/viajar-brasil-argentina-desde-paraguay/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/visa-canada-paraguayos/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/esta-paraguayos-no-aplica/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/estafas-visa-americana-paraguay/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/visa-americana-familias/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/visa-americana-comerciantes-empresarios/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/visa-americana-tratamiento-medico/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/renovar-visa-americana-sin-entrevista/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/visa-americana-pasaporte-nuevo-o-vencido/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/procesamiento-administrativo-221g-visa-americana/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/cuanto-tarda-la-visa-americana-paraguay/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/visa-americana-aprobada-que-sigue/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/que-se-puede-hacer-con-visa-b2/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/carta-de-invitacion-visa-americana/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/foto-para-visa-americana-requisitos/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/entrar-a-estados-unidos-con-visa-aprobada/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/demostrar-vinculos-con-paraguay-visa-americana/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/viajar-a-mexico-desde-paraguay/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/viajar-a-chile-y-uruguay-desde-paraguay/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/viajar-al-reino-unido-desde-paraguay/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/renovar-pasaporte-paraguayo/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/seguro-de-viaje-desde-paraguay/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/glosario-visa-americana/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/guias/destinos-sin-visa-para-paraguayos/",
+      "links": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "/lp/visa-americana/",
+      "links": 3,
+      "status": "PASS"
+    },
+    {
+      "path": "/en/privacy/",
+      "links": 4,
+      "status": "PASS"
+    }
+  ]
+}

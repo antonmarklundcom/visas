@@ -1,5 +1,5 @@
 import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';
-import {PAGES,SITE,LANGUAGE_PAIRS} from './content.mjs';
+import {PAGES,SITE,WA_NUMBER,LANGUAGE_PAIRS} from './content.mjs';
 const ROOT=import.meta.dirname;
 const expected=PAGES.map(p=>p.path);
 export const ROUTES=expected;
@@ -23,6 +23,12 @@ for(const p of PAGES){const h=pages.get(p.path);if(!h)continue;const prefix=p.pa
  for(const match of h.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)){try{const obj=JSON.parse(match[1]);check(obj['@graph'].length>0,prefix+'schema graph');}catch{check(false,prefix+'invalid JSON-LD');}}
  for(const m of h.matchAll(/<a\b[^>]*href="([^"]+)"/g)){
   const href=decode(m[1]);if(href.startsWith('#')){check(h.includes('id="'+href.slice(1)+'"'),prefix+'missing anchor '+href);continue;}
+  if(href.startsWith('https://wa.me/')){
+   const target=new URL(href),message=target.searchParams.get('text')||'';
+   check(target.pathname==='/'+WA_NUMBER,prefix+'WhatsApp recipient');
+   check(message.includes('visas.com.py')&&message.includes(SITE+p.path),prefix+'WhatsApp website and source page');
+   check(message.includes(p.waContext||p.label||p.hero.title),prefix+'WhatsApp page topic');
+  }
   if(!href.startsWith('/'))continue;const target=href.split(/[?#]/)[0];check(target==='/lead-forward.php'||pages.has(target),prefix+'broken internal link '+target);
  }
  for(const m of h.matchAll(/(?:src|href)="(\/assets\/[^"?]+)(?:\?[^\"]*)?"/g))assets.add(m[1]);

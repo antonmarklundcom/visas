@@ -19,9 +19,17 @@ export const WA_MENU = [
   ['otro-destino', 'Otro destino (Canadá, España, Australia)'],
   ['paraguay', 'Residencia o visa para entrar a Paraguay'],
   ['otra', 'Otra consulta'],
-].map(([id, label]) => ({ id, label, text: context => `Hola! Mi consulta: ${label}. ¿Qué necesito para empezar?` }));
+].map(([id, label]) => ({ id, label }));
 export const SITE = 'https://visas.com.py';
-export const WA_NUMBER = '595995628862';
+export const WA_NUMBER = '595992279599';
+export function waMessage(page, interest = '') {
+  const context = page.waContext || page.label || page.hero.title;
+  const source = SITE + page.path;
+  return page.lang === 'en'
+    ? `Hi! I found visas.com.py. Page: ${context} (${source}). ${interest ? `Interested in: ${interest}. ` : ''}My question:`
+    : `Hola! Vengo de visas.com.py. Página: ${context} (${source}). ${interest ? `Me interesa: ${interest}. ` : ''}Mi consulta:`;
+}
+export const waHref = (page, interest = '') => `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(waMessage(page, interest))}`;
 export const DISCLAIMER = 'visas.com.py es un sitio privado e independiente de información sobre visas. No estamos afiliados a la Embajada de los Estados Unidos ni a ningún gobierno. La decisión sobre cada visa la toma la autoridad competente. Ningún resultado está asegurado ni prometido.';
 
 export const SERVICES = [

@@ -6,9 +6,10 @@
     const stage = preparer.querySelector('#enquiry-stage');
     const updateMessage = () => {
       const en = preparer.dataset.lang === 'en';
+      const source = `${document.body.dataset.waPageLabel} (${document.body.dataset.waPageUrl}). `;
       const message = en
-        ? `Hi! I found visas.com.py. ${destination.value ? 'Destination: ' + destination.value + '. ' : ''}${stage.value ? 'Topic: ' + stage.value + '. ' : ''}I have a general question. Please tell me who handles this channel and what help is available.`
-        : `Hola! Vengo de visas.com.py. ${destination.value ? 'Destino: ' + destination.value + '. ' : ''}${stage.value ? 'Tema: ' + stage.value + '. ' : ''}Tengo una consulta general. ¿Quién atiende este canal y qué ayuda está disponible?`;
+        ? `Hi! I found visas.com.py. Page: ${source}${destination.value ? 'Destination: ' + destination.value + '. ' : ''}${stage.value ? 'Topic: ' + stage.value + '. ' : ''}I have a general question. Please tell me who handles this channel and what help is available.`
+        : `Hola! Vengo de visas.com.py. Página: ${source}${destination.value ? 'Destino: ' + destination.value + '. ' : ''}${stage.value ? 'Tema: ' + stage.value + '. ' : ''}Tengo una consulta general. ¿Quién atiende este canal y qué ayuda está disponible?`;
       preparer.querySelector('[data-enquiry-preview]').textContent = message;
       preparer.querySelector('[data-enquiry-link]').href = `https://wa.me/${preparer.dataset.waNumber}?text=${encodeURIComponent(message)}`;
     };
@@ -170,7 +171,7 @@ const visasAttribution=(()=>{
    const body=await response.json();
    if(body.status==='error'){if(body.csrf)form.elements.csrf.value=body.csrf;showError(body.message,body.field);return;}
    if(!['pending','delivered'].includes(body.status))throw Error('response');
-   result.replaceChildren();const h=document.createElement('h2');h.textContent=body.status==='delivered'?(en?'Enquiry received':'Consulta recibida'):(en?'Delivery pending':'Entrega pendiente');const p=document.createElement('p');p.textContent=body.message;const ref=document.createElement('p');ref.textContent='Ref: '+body.reference;const wa=document.createElement('a');wa.className='button button--wa';wa.href='https://wa.me/595995628862?text='+encodeURIComponent((en?'Hello, my enquiry reference is ':'Hola, la referencia de mi consulta es ')+body.reference);wa.textContent=en?'Continue on WhatsApp':'Seguir por WhatsApp';wa.addEventListener('click',()=>window.visasTrack?.('whatsapp_click',{intent:'form_followup'}));result.append(h,p,ref,wa);result.hidden=false;result.focus();
+   result.replaceChildren();const h=document.createElement('h2');h.textContent=body.status==='delivered'?(en?'Enquiry received':'Consulta recibida'):(en?'Delivery pending':'Entrega pendiente');const p=document.createElement('p');p.textContent=body.message;const ref=document.createElement('p');ref.textContent='Ref: '+body.reference;const wa=document.createElement('a');wa.className='button button--wa';wa.href=body.whatsapp_url;wa.textContent=en?'Continue on WhatsApp':'Seguir por WhatsApp';wa.addEventListener('click',()=>window.visasTrack?.('whatsapp_click',{intent:'form_followup'}));result.append(h,p,ref,wa);result.hidden=false;result.focus();
    if(body.status==='delivered'){form.hidden=true;if(!body.duplicate)window.visasTrack?.('generate_lead',{delivery:'crm'});}else{window.visasTrack?.('lead_pending');}
   }catch{showError(en?'We could not confirm delivery. Your text is still here. Retry or use WhatsApp.':'No pudimos confirmar el envío. Tu texto sigue acá. Reintentá o escribinos por WhatsApp.');}
   finally{submit.disabled=false;submit.textContent=label;}

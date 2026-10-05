@@ -372,6 +372,7 @@
     "WhatsApp chooser and seven valid links; no messages sent",
     "Message helper encodes selected destination/topic without POST or document collection",
     "English message helper",
+    "Dormant form follow-up uses contextual server URL; browser-only POST mock",
     "Additional 320 and 768 px overflow checks",
     "200% text scaling",
     "Reduced motion",

@@ -42,7 +42,7 @@ Inventeringen finns i [live-audit-2026-10-04.json](live-audit-2026-10-04.json). 
 
 - Kontakt på spanska och engelska har en frivillig meddelandehjälp med destination och ämne.
 - Valen stannar i webbläsaren. Hjälpen gör ingen POST, lagrar inte valen och skickar inga dokument.
-- Besökaren ser den förberedda texten och öppnar WhatsApp för att själv granska och skicka den. Det befintliga numret från live används.
+- Besökaren ser den förberedda texten och öppnar WhatsApp för att själv granska och skicka den. Det av beställaren bekräftade numret +595 992 279599 används från uppdateringen den 5 oktober.
 - En fungerande direktlänk finns när JavaScript är avstängt.
 - Texten skiljer allmänna frågor från konsulär tidsbokning och beslut. Den ber besökaren kontrollera vem som ansvarar innan mer information delas.
 - Integritetssidorna beskriver det aktiva WhatsApp-flödet. Analytik är fortfarande avstängd. Det befintliga formuläret kan återaktiveras med samma byggflagga efter separat driftverifiering; detta uppdrag har inte aktiverat det.
@@ -73,8 +73,8 @@ Inventeringen finns i [live-audit-2026-10-04.json](live-audit-2026-10-04.json). 
 |---|---|
 | Byggning | PASS; 68 HTML-/nyttosidor genereras från källfiler |
 | Preflight och PHP-syntax | PASS; 68 routes, 64 sitemap-poster, 89 använda tillgångar |
-| Befintliga formulärintegrationstester | PASS; 17 tester, syntetiska uppgifter och lokal CRM-mock |
-| Lokal webbläsarkontroll | PASS; 64 indexerbara sidor, 18 screenshots och 9 interaktionskontroller |
+| Befintliga formulärintegrationstester | PASS; 18 tester, syntetiska uppgifter och lokal CRM-mock |
+| Lokal webbläsarkontroll | PASS; 64 indexerbara sidor, 18 screenshots och 10 interaktionskontroller |
 | Desktop/mobil | 1440 och 390 px; startsida, USA, Kanada, Spanien, kontakt, FAQ, DS-160, integritet och engelsk kontakt |
 | Ytterligare layout | 320 och 768 px, 200 % text, inga horisontella överflöden i kontrollerade vyer |
 | Tangentbord och fokus | Mobilmeny öppnas, Escape stänger, fokus återgår; WhatsApp-dialog och länkar kontrollerade |
@@ -120,3 +120,12 @@ Följande uppgifter kräver ägare/drift:
 Bygg med `npm ci`, `npm run build`, `npm run preflight` och `npm test`. `npm run package` bygger, testar och skapar ZIP; PHP 8.1+ och Python 3 behövs lokalt. Webbhotellet behöver PHP, inte Node.
 
 Starta den lokala PHP-previewen med `npm run serve`. Kör `npm run verify:browser` med Playwright tillgängligt. Valfria miljövariabler: `VISAS_PLAYWRIGHT_MODULE` för modulens sökväg och `VISAS_BROWSER_EXECUTABLE` för installerad Chrome. Standardport är 8787. Testet accepterar enbart lokal preview; `VISAS_PREVIEW_URL` kan ange annan lokal port. Resultaten skrivs till ignorerade `test-results/browser`.
+
+## Uppföljning: WhatsApp, 5 oktober 2026
+
+- Beställaren angav **+595 992 279599**. Alla 398 statiska WhatsApp-länkar på 68 sidor använder det numret.
+- Varje meddelande anger visas.com.py, sidans namn och dess kanoniska adress. Startsidesmenyn tar med valt intresse; kontaktförberedelsen tar med vald destination och ämne.
+- Spanska, engelska, länkar i guider, mobilmeny, sidfot och flöden utan JavaScript omfattas. Det avstängda formulärets eventuella uppföljning får samma nummer, källa, ämne och referens i både JSON- och HTML-svar.
+- Frågeparametrar och fragment läggs inte i WhatsApp-meddelandena. Inga meddelanden skickades.
+- Kontroll: byggning och preflight godkända; 18 lokala integrationstester och 10 webbläsarkontroller godkända. Se [WhatsApp-kontrollen](whatsapp-qa-2026-10-05.json).
+- Uppdaterat publiceringspaket: dist/visas-com-py-hostinger-2026-10-05.zip. PR #4 ska förbli öppen och **inte draft**; ingen merge eller publicering görs.
