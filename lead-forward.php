@@ -73,7 +73,11 @@ catch(Throwable $e) {error_log('[visas] handler_unavailable');reply_error('unava
 $delivered=$result['status']==='delivered';
 $message=$delivered ? ($en?'Your enquiry was received. Keep your reference for follow-up.':'Recibimos tu consulta. Conservá la referencia para el seguimiento.') : ($en?'Your enquiry was saved, but delivery is pending. For a direct conversation, please use WhatsApp.':'Guardamos tu consulta, pero su entrega está pendiente. Para conversar directamente, escribinos por WhatsApp.');
 $ref=substr($result['id'],0,12);
+$source=($payload['page_url'] ?? '') ?: 'https://visas.com.py'.($en?'/en/contact/':'/contacto/');
+$topic=$payload['fields']['tipo_visa'] ?? ($en?'General enquiry':'Consulta general');
+$waText=$en ? 'Hi! I found visas.com.py. Page: '.$source.'. Interested in: '.$topic.'. Enquiry reference: '.$ref : 'Hola! Vengo de visas.com.py. Página: '.$source.'. Me interesa: '.$topic.'. Referencia de consulta: '.$ref;
+$waUrl='https://wa.me/595992279599?text='.rawurlencode($waText);
 if($delivered) $_SESSION['submission_id']=bin2hex(random_bytes(24));
-if($json){http_response_code($delivered?200:202);header('Content-Type: application/json');echo json_encode(['status'=>$result['status'],'message'=>$message,'reference'=>$ref,'duplicate'=>$result['duplicate']]);exit;}
+if($json){http_response_code($delivered?200:202);header('Content-Type: application/json');echo json_encode(['status'=>$result['status'],'message'=>$message,'reference'=>$ref,'duplicate'=>$result['duplicate'],'whatsapp_url'=>$waUrl]);exit;}
 header('Content-Type: text/html; charset=utf-8');
-echo '<!doctype html><html lang="'.($en?'en':'es').'"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'.($en?'Your enquiry':'Tu consulta').'</title><link rel="stylesheet" href="/assets/css/site.css"><main class="container section"><h1>'.($en?'Your enquiry':'Tu consulta').'</h1><p>'.esc_value($message).'</p><p>Ref: '.esc_value($ref).'</p><p><a class="button button--wa" href="https://wa.me/595995628862">WhatsApp</a></p><a href="'.($en?'/en/':'/').'">'.($en?'Home':'Inicio').'</a></main></html>';
+echo '<!doctype html><html lang="'.($en?'en':'es').'"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'.($en?'Your enquiry':'Tu consulta').'</title><link rel="stylesheet" href="/assets/css/site.css"><main class="container section"><h1>'.($en?'Your enquiry':'Tu consulta').'</h1><p>'.esc_value($message).'</p><p>Ref: '.esc_value($ref).'</p><p><a class="button button--wa" href="'.esc_value($waUrl).'">WhatsApp</a></p><a href="'.($en?'/en/':'/').'">'.($en?'Home':'Inicio').'</a></main></html>';

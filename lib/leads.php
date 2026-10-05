@@ -92,8 +92,9 @@ function visas_save(string $file, array $data): void {
 
 function visas_deliver(array $payload, array $config): array {
     $dir = visas_storage($config); $id = $payload['idempotency_key'];
-    $lock = fopen($dir . '/queue.lock','c');
-    if (!$lock || !flock($lock, LOCK_EX)) throw new RuntimeException('Queue lock failed');
+    $lock = @fopen($dir . '/queue.lock','c');
+    if (!$lock) throw new RuntimeException('Queue lock failed');
+    if (!@flock($lock, LOCK_EX)) { fclose($lock); throw new RuntimeException('Queue lock failed'); }
     try {
         $file=$dir . '/' . $id . '.json';
         $existing=is_file($file)?json_decode((string)file_get_contents($file),true):null;
@@ -111,7 +112,9 @@ function visas_deliver(array $payload, array $config): array {
 
 function visas_rate_limit(array $config, string $ip): bool {
     $file=visas_storage($config) . '/rate.json';
-    $handle=fopen($file,'c+'); if(!$handle || !flock($handle,LOCK_EX)) throw new RuntimeException('Rate storage unavailable');
+    $handle=@fopen($file,'c+');
+    if(!$handle) throw new RuntimeException('Rate storage unavailable');
+    if(!@flock($handle,LOCK_EX)) { fclose($handle); throw new RuntimeException('Rate storage unavailable'); }
     try {
         $rows=json_decode(stream_get_contents($handle),true) ?: []; $now=time();
         $rows=array_filter($rows,fn($r)=>is_array($r)&&($r['until']??0)>$now);
@@ -119,7 +122,9 @@ function visas_rate_limit(array $config, string $ip): bool {
         $allowed=$row['count']<8; $row['count']++; $rows[$id]=$row;
         // A fixed cap bounds disk use even under many distinct source addresses.
         if(count($rows)>10000) $rows=array_slice($rows,-10000,null,true);
-        rewind($handle); ftruncate($handle,0); fwrite($handle,json_encode($rows)); fflush($handle);
+        $encoded=json_encode($rows,JSON_THROW_ON_ERROR);
+        if(!@rewind($handle) || !@ftruncate($handle,0) || @fwrite($handle,$encoded)!==strlen($encoded) || !@fflush($handle))
+            throw new RuntimeException('Rate storage write failed');
         return $allowed;
     } finally {flock($handle,LOCK_UN);fclose($handle);}
 }

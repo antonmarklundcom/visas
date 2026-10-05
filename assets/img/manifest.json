@@ -742,6 +742,57 @@
         }
       ],
       "html_snippet": "<picture>\n  <source type=\"image/avif\" srcset=\"assets/img/expat-us-visa-application-office-asuncion-640.avif 640w, assets/img/expat-us-visa-application-office-asuncion-1280.avif 1280w, assets/img/expat-us-visa-application-office-asuncion-1920.avif 1920w\">\n  <source type=\"image/webp\" srcset=\"assets/img/expat-us-visa-application-office-asuncion-640.webp 640w, assets/img/expat-us-visa-application-office-asuncion-1280.webp 1280w, assets/img/expat-us-visa-application-office-asuncion-1920.webp 1920w\">\n  <img src=\"assets/img/expat-us-visa-application-office-asuncion-1280.webp\" alt=\"Expat reviewing passport and documents with an advisor in a bright office in Asunción\" width=\"1280\" height=\"960\" loading=\"lazy\" decoding=\"async\">\n</picture>"
+    },
+    {
+      "filename_base": "destino-nueva-york",
+      "source": "Higgsfield job cc7f08d0-a1eb-4c85-b665-03ddeed59d61",
+      "prompt": "New York destination inspiration; no people, documents, logos or official affiliation",
+      "alt_text": "Ilustración generada con IA del horizonte de Manhattan visto desde Brooklyn, al atardecer",
+      "aspect_ratio": "3:2",
+      "files": [
+        {
+          "file": "destino-nueva-york-640.avif",
+          "format": "avif",
+          "width": 640,
+          "height": 425,
+          "kb": 21.1
+        },
+        {
+          "file": "destino-nueva-york-640.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 425,
+          "kb": 47
+        },
+        {
+          "file": "destino-nueva-york-1280.avif",
+          "format": "avif",
+          "width": 1280,
+          "height": 850,
+          "kb": 69.7
+        },
+        {
+          "file": "destino-nueva-york-1280.webp",
+          "format": "webp",
+          "width": 1280,
+          "height": 850,
+          "kb": 165.3
+        },
+        {
+          "file": "destino-nueva-york-1920.avif",
+          "format": "avif",
+          "width": 1920,
+          "height": 1275,
+          "kb": 132.6
+        },
+        {
+          "file": "destino-nueva-york-1920.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1275,
+          "kb": 316.4
+        }
+      ]
     }
   ]
 }

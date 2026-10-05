@@ -1,0 +1,383 @@
+{
+  "routes": [
+    {
+      "route": "/",
+      "status": 200
+    },
+    {
+      "route": "/contacto/",
+      "status": 200
+    },
+    {
+      "route": "/privacidad/",
+      "status": 200
+    },
+    {
+      "route": "/visa-canada/",
+      "status": 200
+    },
+    {
+      "route": "/residencia-en-paraguay/",
+      "status": 200
+    },
+    {
+      "route": "/visa-americana/turista/",
+      "status": 200
+    },
+    {
+      "route": "/visa-americana/renovacion/",
+      "status": 200
+    },
+    {
+      "route": "/visa-americana/estudiante/",
+      "status": 200
+    },
+    {
+      "route": "/visa-americana/trabajo/",
+      "status": 200
+    },
+    {
+      "route": "/visa-americana/entrevista/",
+      "status": 200
+    },
+    {
+      "route": "/visa-americana/denegada/",
+      "status": 200
+    },
+    {
+      "route": "/visa-americana/",
+      "status": 200
+    },
+    {
+      "route": "/guias/requisitos-visa-americana-paraguay/",
+      "status": 200
+    },
+    {
+      "route": "/guias/como-llenar-el-ds-160/",
+      "status": 200
+    },
+    {
+      "route": "/guias/preguntas-entrevista-visa-americana/",
+      "status": 200
+    },
+    {
+      "route": "/guias/visa-americana-denegada-214b/",
+      "status": 200
+    },
+    {
+      "route": "/guias/",
+      "status": 200
+    },
+    {
+      "route": "/preguntas-frecuentes/",
+      "status": 200
+    },
+    {
+      "route": "/nosotros/",
+      "status": 200
+    },
+    {
+      "route": "/visa-espana/",
+      "status": 200
+    },
+    {
+      "route": "/work-and-travel/",
+      "status": 200
+    },
+    {
+      "route": "/visa-australia/",
+      "status": 200
+    },
+    {
+      "route": "/residencia-en-paraguay/permanente/",
+      "status": 200
+    },
+    {
+      "route": "/residencia-en-paraguay/temporal/",
+      "status": 200
+    },
+    {
+      "route": "/residencia-en-paraguay/requisitos/",
+      "status": 200
+    },
+    {
+      "route": "/guias/embajada-de-estados-unidos-en-paraguay/",
+      "status": 200
+    },
+    {
+      "route": "/guias/migraciones-paraguay/",
+      "status": 200
+    },
+    {
+      "route": "/en/paraguay-visa/",
+      "status": 200
+    },
+    {
+      "route": "/en/us-visa-from-paraguay/",
+      "status": 200
+    },
+    {
+      "route": "/en/canada-visa-from-paraguay/",
+      "status": 200
+    },
+    {
+      "route": "/en/residency-in-paraguay/",
+      "status": 200
+    },
+    {
+      "route": "/en/",
+      "status": 200
+    },
+    {
+      "route": "/en/contact/",
+      "status": 200
+    },
+    {
+      "route": "/guias/cuanto-cuesta-la-visa-americana/",
+      "status": 200
+    },
+    {
+      "route": "/guias/requisitos-para-viajar-a-espana-desde-paraguay/",
+      "status": 200
+    },
+    {
+      "route": "/guias/checklist-visa-americana/",
+      "status": 200
+    },
+    {
+      "route": "/guias/pagar-tasa-y-agendar-visa-eeuu/",
+      "status": 200
+    },
+    {
+      "route": "/guias/visa-integrity-fee-usa-paraguay/",
+      "status": 200
+    },
+    {
+      "route": "/guias/etias-europa-paraguayos/",
+      "status": 200
+    },
+    {
+      "route": "/guias/viajar-brasil-argentina-desde-paraguay/",
+      "status": 200
+    },
+    {
+      "route": "/guias/visa-canada-paraguayos/",
+      "status": 200
+    },
+    {
+      "route": "/guias/esta-paraguayos-no-aplica/",
+      "status": 200
+    },
+    {
+      "route": "/guias/estafas-visa-americana-paraguay/",
+      "status": 200
+    },
+    {
+      "route": "/guias/visa-americana-familias/",
+      "status": 200
+    },
+    {
+      "route": "/guias/visa-americana-comerciantes-empresarios/",
+      "status": 200
+    },
+    {
+      "route": "/guias/visa-americana-tratamiento-medico/",
+      "status": 200
+    },
+    {
+      "route": "/guias/renovar-visa-americana-sin-entrevista/",
+      "status": 200
+    },
+    {
+      "route": "/guias/visa-americana-pasaporte-nuevo-o-vencido/",
+      "status": 200
+    },
+    {
+      "route": "/guias/procesamiento-administrativo-221g-visa-americana/",
+      "status": 200
+    },
+    {
+      "route": "/guias/cuanto-tarda-la-visa-americana-paraguay/",
+      "status": 200
+    },
+    {
+      "route": "/guias/visa-americana-aprobada-que-sigue/",
+      "status": 200
+    },
+    {
+      "route": "/guias/que-se-puede-hacer-con-visa-b2/",
+      "status": 200
+    },
+    {
+      "route": "/guias/carta-de-invitacion-visa-americana/",
+      "status": 200
+    },
+    {
+      "route": "/guias/foto-para-visa-americana-requisitos/",
+      "status": 200
+    },
+    {
+      "route": "/guias/entrar-a-estados-unidos-con-visa-aprobada/",
+      "status": 200
+    },
+    {
+      "route": "/guias/demostrar-vinculos-con-paraguay-visa-americana/",
+      "status": 200
+    },
+    {
+      "route": "/guias/viajar-a-mexico-desde-paraguay/",
+      "status": 200
+    },
+    {
+      "route": "/guias/viajar-a-chile-y-uruguay-desde-paraguay/",
+      "status": 200
+    },
+    {
+      "route": "/guias/viajar-al-reino-unido-desde-paraguay/",
+      "status": 200
+    },
+    {
+      "route": "/guias/renovar-pasaporte-paraguayo/",
+      "status": 200
+    },
+    {
+      "route": "/guias/seguro-de-viaje-desde-paraguay/",
+      "status": 200
+    },
+    {
+      "route": "/guias/glosario-visa-americana/",
+      "status": 200
+    },
+    {
+      "route": "/guias/destinos-sin-visa-para-paraguayos/",
+      "status": 200
+    },
+    {
+      "route": "/en/privacy/",
+      "status": 200
+    }
+  ],
+  "views": [
+    {
+      "route": "/",
+      "width": 390,
+      "overflow": false,
+      "images": "loaded"
+    },
+    {
+      "route": "/visa-americana/",
+      "width": 390,
+      "overflow": false,
+      "images": "loaded"
+    },
+    {
+      "route": "/visa-canada/",
+      "width": 390,
+      "overflow": false,
+      "images": "loaded"
+    },
+    {
+      "route": "/visa-espana/",
+      "width": 390,
+      "overflow": false,
+      "images": "loaded"
+    },
+    {
+      "route": "/contacto/",
+      "width": 390,
+      "overflow": false,
+      "images": "loaded"
+    },
+    {
+      "route": "/preguntas-frecuentes/",
+      "width": 390,
+      "overflow": false,
+      "images": "loaded"
+    },
+    {
+      "route": "/guias/como-llenar-el-ds-160/",
+      "width": 390,
+      "overflow": false,
+      "images": "loaded"
+    },
+    {
+      "route": "/privacidad/",
+      "width": 390,
+      "overflow": false,
+      "images": "loaded"
+    },
+    {
+      "route": "/en/contact/",
+      "width": 390,
+      "overflow": false,
+      "images": "loaded"
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "overflow": false,
+      "images": "loaded"
+    },
+    {
+      "route": "/visa-americana/",
+      "width": 1440,
+      "overflow": false,
+      "images": "loaded"
+    },
+    {
+      "route": "/visa-canada/",
+      "width": 1440,
+      "overflow": false,
+      "images": "loaded"
+    },
+    {
+      "route": "/visa-espana/",
+      "width": 1440,
+      "overflow": false,
+      "images": "loaded"
+    },
+    {
+      "route": "/contacto/",
+      "width": 1440,
+      "overflow": false,
+      "images": "loaded"
+    },
+    {
+      "route": "/preguntas-frecuentes/",
+      "width": 1440,
+      "overflow": false,
+      "images": "loaded"
+    },
+    {
+      "route": "/guias/como-llenar-el-ds-160/",
+      "width": 1440,
+      "overflow": false,
+      "images": "loaded"
+    },
+    {
+      "route": "/privacidad/",
+      "width": 1440,
+      "overflow": false,
+      "images": "loaded"
+    },
+    {
+      "route": "/en/contact/",
+      "width": 1440,
+      "overflow": false,
+      "images": "loaded"
+    }
+  ],
+  "checks": [
+    "Mobile menu opens, Escape closes, focus returns",
+    "WhatsApp chooser and seven valid links; no messages sent",
+    "Message helper encodes selected destination/topic without POST or document collection",
+    "English message helper",
+    "Dormant form follow-up uses contextual server URL; browser-only POST mock",
+    "Additional 320 and 768 px overflow checks",
+    "200% text scaling",
+    "Reduced motion",
+    "Contact fallback with JavaScript disabled",
+    "No browser JavaScript errors"
+  ],
+  "metadataChanges": []
+}
