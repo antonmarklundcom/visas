@@ -1,4 +1,5 @@
 import { createServer } from 'node:http';
+import { fetchLocal as fetch } from './local-test-http.mjs';
 import { spawn } from 'node:child_process';
 import { mkdtemp, mkdir, readFile, readdir, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';

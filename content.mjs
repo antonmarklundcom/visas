@@ -1,4 +1,5 @@
 import { applyEditorial } from './editorial.mjs';
+import { applyRefresh } from './content-refresh.mjs';
 import feesBooking from './guides-extra/fees-booking.mjs';
 import travelNoVisa from './guides-extra/travel-no-visa.mjs';
 import canadaEstaScams from './guides-extra/canada-esta-scams.mjs';
@@ -1363,3 +1364,4 @@ for (const [path, pairs] of Object.entries(faqExtra)) {
   const seen = new Set(faq.items.map(i => i.question));
   for (const [question, answer] of pairs) if (!seen.has(question)) faq.items.push({ question, answer });
 }
+applyRefresh(PAGES, NAV);

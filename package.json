@@ -6,6 +6,7 @@
   "scripts": {
     "build": "node build-site.mjs",
     "verify": "node verify.mjs",
+    "verify:browser": "node scripts/verify-browser.cjs",
     "serve": "node serve.mjs",
     "preflight": "node scripts/preflight.mjs",
     "test": "node scripts/test-leads.mjs",

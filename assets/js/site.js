@@ -1,4 +1,23 @@
 (() => {
+  // Optional message preparation stays in the browser; only the user sends in WhatsApp.
+  const preparer = document.querySelector('[data-enquiry-preparer]');
+  if (preparer) {
+    const destination = preparer.querySelector('#enquiry-destination');
+    const stage = preparer.querySelector('#enquiry-stage');
+    const updateMessage = () => {
+      const en = preparer.dataset.lang === 'en';
+      const message = en
+        ? `Hi! I found visas.com.py. ${destination.value ? 'Destination: ' + destination.value + '. ' : ''}${stage.value ? 'Topic: ' + stage.value + '. ' : ''}I have a general question. Please tell me who handles this channel and what help is available.`
+        : `Hola! Vengo de visas.com.py. ${destination.value ? 'Destino: ' + destination.value + '. ' : ''}${stage.value ? 'Tema: ' + stage.value + '. ' : ''}Tengo una consulta general. ¿Quién atiende este canal y qué ayuda está disponible?`;
+      preparer.querySelector('[data-enquiry-preview]').textContent = message;
+      preparer.querySelector('[data-enquiry-link]').href = `https://wa.me/${preparer.dataset.waNumber}?text=${encodeURIComponent(message)}`;
+    };
+    destination.addEventListener('change', updateMessage);
+    stage.addEventListener('change', updateMessage);
+    updateMessage();
+  }
+})();
+(() => {
   const burger = document.querySelector('.burger');
   const menu = document.querySelector('#mobile-menu');
   if (burger && menu) {
