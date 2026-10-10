@@ -5,9 +5,19 @@ function visas_config(): array {
     $file = getenv('VISAS_CONFIG_FILE') ?: dirname(__DIR__, 2) . '/visas-private/config.php';
     $private = is_file($file) ? require $file : [];
     if (!is_array($private)) throw new RuntimeException('Invalid private configuration');
+    require_once __DIR__ . '/vendercrm-config.php';
+    $canonicalEnv = ['VENDERCRM_URL'=>getenv('VENDERCRM_URL'), 'VENDERCRM_API_KEY'=>getenv('VENDERCRM_API_KEY'), 'VENDERCRM_CONFIG_FILE'=>getenv('VENDERCRM_CONFIG_FILE')];
+    // Verified historical key-only configuration stays in the legacy loader.
+    if (!$canonicalEnv['VENDERCRM_URL']) $canonicalEnv['VENDERCRM_API_KEY'] = false;
+    // Keep the existing CLI-server-only loopback mock lane; never widen production URLs.
+    $legacyMock = PHP_SAPI === 'cli-server' && getenv('VISAS_TEST_MODE') === '1'
+        && is_string($canonicalEnv['VENDERCRM_URL'])
+        && preg_match('~^http://127\.0\.0\.1:[0-9]+/?$~D', $canonicalEnv['VENDERCRM_URL']);
+    if ($legacyMock) { $canonicalEnv['VENDERCRM_URL'] = false; $canonicalEnv['VENDERCRM_API_KEY'] = false; }
+    $canonicalCrm = \VenderCRM\Config::optional(dirname(__DIR__), $canonicalEnv);
     return [
-        'url' => getenv('VENDERCRM_URL') ?: ($private['crm_url'] ?? 'https://crm.clientes.com.py'),
-        'key' => getenv('VENDERCRM_API_KEY') ?: ($private['api_key'] ?? ''),
+        'url' => $canonicalCrm ? $canonicalCrm->doctor()['url'] : (getenv('VENDERCRM_URL') ?: ($private['crm_url'] ?? 'https://crm.clientes.com.py')),
+        'key' => $canonicalCrm ? $canonicalCrm->apiKey() : (getenv('VENDERCRM_API_KEY') ?: ($private['api_key'] ?? '')),
         'storage' => getenv('VISAS_STORAGE_DIR') ?: ($private['storage_dir'] ?? dirname(__DIR__, 2) . '/visas-private/data'),
     ];
 }
